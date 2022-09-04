@@ -1,13 +1,13 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Home from "../components/Home.vue";
-import Functionize from "../components/Functionize.vue";
-import DevPortal from "../components/DevPortal.vue";
-import SystemOutages from "../components/SystemOutages.vue";
-import CDCProject from "../components/CDCProject.vue";
-import ContactMe from "../components/ContactMe.vue";
-import NotFound from "../components/NotFound.vue";
-import AboutMe from "../components/AboutMe.vue";
-import AllVoices from "../components/AllVoices.vue";
+import Home from "../views/Home.vue";
+import Functionize from "../views/Functionize.vue";
+import DevPortal from "../views/DevPortal.vue";
+import SystemOutages from "../views/SystemOutages.vue";
+import CDCProject from "../views/CDCProject.vue";
+import ContactMe from "../views/ContactMe.vue";
+import NotFound from "../views/NotFound.vue";
+import AboutMe from "../views/AboutMe.vue";
+import AllVoices from "../views/AllVoices.vue";
 
 const routes = [
   {
