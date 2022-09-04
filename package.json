@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.9"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.0.96",
+    "@mdi/js": "^7.0.96",
+    "axios": "^0.27.2",
+    "mdi": "^2.2.43",
+    "sass": "^1.54.8",
+    "vue-router": "^4.1.5",
+    "vuetify": "^3.0.0-beta.10",
+    "vuex": "^4.0.2"
+  }
+}
