@@ -16,6 +16,7 @@
     "@nuxtjs/google-fonts": "^3.0.0-0",
     "axios": "^0.27.2",
     "mdi": "^2.2.43",
+    "nuxt-svgo": "^1.0.1",
     "sass": "^1.54.8",
     "vue-router": "^4.1.5",
     "vuetify": "^3.0.0-beta.10"

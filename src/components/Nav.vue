@@ -1,44 +1,40 @@
 <template>
     <v-app-bar elevation="0">
         <template v-slot:prepend>
-          <v-btn icon dark color='#004D78' aria-label="Home button" to="/" >
+          <v-btn icon dark color='#004D78' aria-label="Home button" to="/">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 20.5V14.5H14V20.5H19V12.5H22L12 3.5L2 12.5H5V20.5H10Z" fill="#004D78"/>
             </svg>
-            </v-btn>
+          </v-btn>
         </template>
 
         <v-app-bar-title class="font-weight-regular" style="color:#004D78">Bryce's Portfolio</v-app-bar-title>
           <v-btn icon dark color='#004D78' aria-label="Three dot menu">
             <v-menu activator="parent" >
-            <v-list elevation="1" style="border-radius: 4px">
-              <v-list-item to="/aboutme">
-                <v-list-item start>
-                    <svg width="39" height="29" viewBox="0 0 39 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 17C14.21 17 16 15.21 16 13C16 10.79 14.21 9 12 9C9.79 9 8 10.79 8 13C8 15.21 9.79 17 12 17ZM12 19C9.33 19 4 20.34 4 23V25H20V23C20 20.34 14.67 19 12 19Z" fill="#004D78"/>
-                    </svg>
-                </v-list-item>
-                <v-list-item-title>About Me</v-list-item-title>
+            <v-list elevation="1" style="border-radius: 4px" width="175px">
+              <v-list-item 
+              prepend-avatar="https://res.cloudinary.com/bryce-portfolio/image/upload/v1662345381/About_Me_xzhvsi.svg"
+              title="About Me"
+              to="/aboutme"
+              nuxt
+              >
               </v-list-item>
-              <v-list-item to="/contact">
-              <v-list-item start>
-                    <svg width="39" height="29" viewBox="0 0 39 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 9H4C2.9 9 2.01 9.9 2.01 11L2 23C2 24.1 2.9 25 4 25H20C21.1 25 22 24.1 22 23V11C22 9.9 21.1 9 20 9ZM20 13L12 18L4 13V11L12 16L20 11V13Z" fill="#004D78"/>
-                    </svg>
-                </v-list-item>
-                <v-list-item-title>Contact</v-list-item-title>
+              <v-list-item 
+              prepend-avatar="https://res.cloudinary.com/bryce-portfolio/image/upload/v1662345381/Contact_Me_bzmyve.svg"
+              title="Contact"
+              to="/contact"
+              nuxt
+              >
               </v-list-item>
-              <v-list-item href='https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing'  target="_blank">
-              <v-list-item start >
-                              <svg width="39" height="29" viewBox="0 0 39 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M16 8H5C3.9 8 3 8.9 3 10V24C3 25.1 3.9 26 5 26H19C20.1 26 21 25.1 21 24V13L16 8ZM19 24H5V10H15V14H19V24ZM7 22H17V20H7V22ZM12 12H7V14H12V12ZM7 18H17V16H7V18Z" fill="#004D78"/>
-                              </svg>
-                </v-list-item>
-                <v-list-item-title>Resume</v-list-item-title>
+              <v-list-item 
+              prepend-avatar="https://res.cloudinary.com/bryce-portfolio/image/upload/v1662345381/Resume_yymhqd.svg"
+              title="Resume"
+              href="https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing" target="_blank"
+              >
               </v-list-item>
             </v-list>
           </v-menu>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM12 16C10.9 16 10 16.9 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 16.9 13.1 16 12 16Z" fill="#004D78"/>
             </svg>
           </v-btn>
