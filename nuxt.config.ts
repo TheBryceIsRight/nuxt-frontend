@@ -6,6 +6,14 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify'],
   },
+  buildModules: [
+    '@nuxtjs/google-fonts'
+  ],
+  googleFonts: {
+    families: {
+      Roboto: true,
+    }
+  },
   vite: {
     define: {
       'process.env.DEBUG': false,
