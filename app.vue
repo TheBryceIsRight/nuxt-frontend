@@ -1,5 +1,10 @@
+<script setup lang="ts">
+  const route = useRoute()
+</script>
+
 <template>
   <div>
-    <NuxtPage></NuxtPage>
+      <NuxtLoadingIndicator />
+      <NuxtPage/>
   </div>
 </template>

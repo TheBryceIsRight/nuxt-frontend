@@ -1,9 +1,17 @@
+<script setup>
+
+const { response } = await useFetch('https://portfolio-backend-vc1t.onrender.com/api/projects/?populate=*');
+const { $store } = useNuxtApp();
+$store.commit('setProjects', response.data.data);
+console.log("Response from API:\n\n", response.data.data)
+</script>
+
 <template >
     <div class="container">
       <v-col no-gutters class="profile-card"
         v-for="project in projects" :key="project.attributes.Order"
         :cols="project.attributes.flex" >
-        <router-link :to="project.attributes.route" style="text-decoration: none; color: inherit;">
+        <nuxt-link :to="project.attributes.route" style="text-decoration: none; color: inherit;">
         <v-card v-ripple>
             <v-img
             :src= "project.attributes.Image.data.attributes.caption"
@@ -20,31 +28,16 @@
             </div>
             </v-img>
         </v-card>
-        </router-link>
+        </nuxt-link>
       </v-col>
     </div>
     </template>
     
-    <script>
-    import axios from 'axios'
-    
+    <script>    
     export default {
       computed: {
-        projects: function() { return this.$store.getters.getProjects },
-      },
-      watch: {
-      '$store.getters.getProjects': function() {
-        }
-      },
-      async mounted(){
-        // get request
-        const Response1= await axios.get(
-          `${process.env.VUE_APP_API_ENDPOINT}api/projects/?populate=*`
-        );
-        
-        this.$store.commit('setProjects', Response1.data.data);
-        // console.log("Hello from Profile Card component");
-     },
+        projects: function() { return $store.getters.getProjects },
+      }
     }
     </script>
     
